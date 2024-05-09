@@ -7,10 +7,16 @@
     <ScrollView>
         <StackLayout>
             <Frame
-            BackgroundColor="Blue"
+            BackgroundColor="#143699"
             Margin="0"
             HeightRequest="75"
-            VerticalOptions="Start">
+            VerticalOptions="Start"
+            CornerRadius="0">
+                <Grid ColumnDefinitions="*, *, *, *, *, *, *, *, *, *">
+                    <Image Grid.Column="0" Source="menu_burger.png"/>
+                    <Image Grid.Column="1" Source="logo_icon.png" WidthRequest="1000"/>
+                    <Image Grid.Column="10" Source="user_icon.png" WidthRequest="1000"/>
+                </Grid>
             </Frame>
 
             <Label 
@@ -21,6 +27,16 @@
                 FontAttributes="Bold"
                 Margin="50"
                 Text="BEM VINDO AO MR MATH!"/>
+
+            <Frame
+            BackgroundColor="Blue"
+            Margin="0"
+            
+                WidthRequest="350"
+            HeightRequest="200"
+            VerticalOptions="Start">
+                <Label Text="BANNER" FontSize="Large" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            </Frame>
         </StackLayout>
     </ScrollView>
 
