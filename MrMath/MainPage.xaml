@@ -14,7 +14,7 @@
             CornerRadius="0">
                 <Grid ColumnDefinitions="*, *, *, *, *, *, *, *, *, *">
                     <Image Grid.Column="0" Source="menu_burger.png"/>
-                    <Image Grid.Column="1" Source="logo_icon.png" WidthRequest="1000"/>
+                    <Image Grid.Column="1" Source="logo_icon.png" MaximumHeightRequest="1000"/>
                     <Image Grid.Column="10" Source="user_icon.png" WidthRequest="1000"/>
                 </Grid>
             </Frame>
