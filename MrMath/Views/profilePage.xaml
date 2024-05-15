@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MrMath.Views.profilePage">
+    <ScrollView>
+        <StackLayout>
+            <Frame
+            BackgroundColor="#143699"
+            Margin="0"
+            HeightRequest="75"
+            VerticalOptions="Start"
+            CornerRadius="0">
+                <Grid ColumnDefinitions="*, *, *, *, *, *, *, *, *, *, *">
+                    <!-- 11 colunas -->
+                    <ImageButton BackgroundColor="Transparent" Grid.Column="0" Source="menu_burger.png"/>
+                    <Image Grid.Column="2" Source="logo_icon.png" Margin="-6"  MaximumHeightRequest="1000"/>
+                    <ImageButton x:Name="profileIcon" BackgroundColor="Transparent" Grid.Column="10" Source="user_icon.png" Margin="2" WidthRequest="900"/>
+                </Grid>
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

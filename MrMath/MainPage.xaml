@@ -16,7 +16,7 @@
                 <Grid ColumnDefinitions="*, *, *, *, *, *, *, *, *, *, *"> <!-- 11 colunas -->
                     <ImageButton BackgroundColor="Transparent" Grid.Column="0" Source="menu_burger.png"/>
                     <Image Grid.Column="2" Source="logo_icon.png" Margin="-6"  MaximumHeightRequest="1000"/>
-                    <ImageButton BackgroundColor="Transparent" Grid.Column="10" Source="user_icon.png" Margin="2" WidthRequest="900"/>
+                    <ImageButton x:Name="profileIcon" Clicked="profileIcon_Clicked" BackgroundColor="Transparent" Grid.Column="10" Source="user_icon.png" Margin="2" WidthRequest="900"/>
                 </Grid>
             </Frame>
 

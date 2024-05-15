@@ -1,4 +1,6 @@
-﻿namespace MrMath
+﻿using MrMath.Views;
+
+namespace MrMath
 {
     public partial class MainPage : ContentPage
     {
@@ -8,6 +10,10 @@
             InitializeComponent();
         }
 
+        private void profileIcon_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Views.profilePage());
+        }
     }
 
 }
