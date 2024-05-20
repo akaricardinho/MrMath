@@ -46,7 +46,7 @@
                 </Grid>
 
                 <!--Botão Logout-->
-                <Button Text="Logout" FontSize="Large" Margin="30, 60, 30, 0" BackgroundColor="#143699" FontAttributes="Bold" CornerRadius="20"/>
+                <Button Text="Logout" x:Name="logoutButton" Clicked="logoutButton_Clicked" FontSize="Large" Margin="30, 60, 30, 0" BackgroundColor="#143699" FontAttributes="Bold" CornerRadius="20"/>
 
             </StackLayout>
             
