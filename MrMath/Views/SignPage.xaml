@@ -33,7 +33,7 @@
                 <Entry Placeholder="*****" FontSize="17" PlaceholderColor="Gray" HeightRequest="80"/>
             </Frame>
 
-            <Button Margin="0, 30, 0, 0" Text="Cadastrar" FontSize="Large" FontAttributes="Bold" WidthRequest="250" HeightRequest="75" BackgroundColor="#1E38E6"/>
+            <Button Margin="0, 30, 0, 0" Text="Cadastrar" FontSize="Large" FontAttributes="Bold" WidthRequest="250" HeightRequest="75" BackgroundColor="#1E38E6" CornerRadius="25"/>
 
 
         </StackLayout>
