@@ -13,7 +13,8 @@
             HeightRequest="75"
             VerticalOptions="Start"
             CornerRadius="0">
-                <Grid ColumnDefinitions="*, *, *, *, *, *, *, *, *, *, *"> <!-- 11 colunas -->
+                <Grid ColumnDefinitions="*, *, *, *, *, *, *, *, *, *, *">
+                    <!-- 11 colunas -->
                     <ImageButton BackgroundColor="Transparent" Grid.Column="0" Source="menu_burger.png"/>
                     <Image Grid.Column="2" Source="logo_icon.png" Margin="-6"  MaximumHeightRequest="1000"/>
                     <ImageButton x:Name="profileIcon" Clicked="profileIcon_Clicked" BackgroundColor="Transparent" Grid.Column="10" Source="user_icon.png" Margin="2" WidthRequest="30"/>
@@ -35,11 +36,11 @@
             HeightRequest="200"
             VerticalOptions="Start">
 
-                
+
                 <Label Text="BANNER" FontSize="Large" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
             </Frame>
-            
-            
+
+
 
             <!--Loading Bars-->
             <StackLayout>
@@ -62,7 +63,7 @@
                     VerticalOptions="Start"
                     CornerRadius="50"
                         Grid.Row="1">
-                    <Label Text="100%" FontSize="17" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        <Label Text="100%" FontSize="17" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
                     </Frame>
                     <!--Loading Bar Aulas-->
                     <Label Text="Questões" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="3" HorizontalOptions="Start" Margin="30"/>
@@ -82,14 +83,14 @@
                         HeightRequest="60"
                         VerticalOptions="Start"
                         CornerRadius="50"
-                            Grid.Row="4">   
+                            Grid.Row="4">
                         <Label Text="100%" FontSize="17" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
                     </Frame>
                 </Grid>
             </StackLayout>
+        </StackLayout>
 
 
-                </StackLayout>
     </ScrollView>
 
 

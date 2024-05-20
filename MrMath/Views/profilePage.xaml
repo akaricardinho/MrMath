@@ -20,6 +20,43 @@
                     <ImageButton x:Name="profileIcon" BackgroundColor="Transparent" Grid.Column="10" Source="user_icon.png" Margin="2" WidthRequest="30"/>
                 </Grid>
             </Frame>
+
+            <StackLayout>
+                <Grid ColumnDefinitions="*, *"
+                      RowDefinitions="*, *, *, *, *, *, *, *, *, *">
+                    <!--Minha Conta-->
+                    <Label Margin="20, 20, 20, 30" Grid.Column="0" Grid.Row="0" Text="Minha conta" FontAttributes="Bold" FontSize="Title"/>
+
+                    <!--Nome-->
+                    <Label Margin="20, 20, 20, 0" Grid.Column="0" Grid.Row="2" Text="Nome" FontAttributes="Bold" FontSize="Large"/>
+                    <Label Margin="20, 10, 20, 0" Grid.Column="0" Grid.Row="3" TextColor="DarkGray" Text="txt_nome" FontAttributes="Bold" FontSize="20"/>
+
+                    <!--Sobrenome-->
+                    <Label Margin="20, 40, 20, 0" Grid.Column="0" Grid.Row="4" Text="Sobrenome" FontAttributes="Bold" FontSize="Large"/>
+                    <Label Margin="20, 10, 20, 0" Grid.Column="0" Grid.Row="5" TextColor="DarkGray" Text="txt_sobrenome" FontAttributes="Bold" FontSize="20"/>
+
+
+                    <!--Data do Nascimento-->
+                    <Label Margin="20, 40, 20, 0" Grid.Column="0" Grid.Row="6" Text="Data de Nascimento" FontAttributes="Bold" FontSize="Large"/>
+                    <Label Margin="20, 10, 20, 0" Grid.Column="0" Grid.Row="7" TextColor="DarkGray" Text="dd/mm/aa" FontAttributes="Bold" FontSize="20"/>
+
+                    <!--Data do Nascimento-->
+                    <Label Margin="20, 40, 20, 0" Grid.Column="0" Grid.Row="8" Text="Email" FontAttributes="Bold" FontSize="Large"/>
+                    <Label Margin="20, 10, 0, 0" Grid.Column="0" Grid.Row="9" TextColor="DarkGray" Text="txt_gmail" FontAttributes="Bold" FontSize="20"/>
+                </Grid>
+
+                <!--Botão Logout-->
+                <Button Text="Logout" FontSize="Large" Margin="30, 60, 30, 0" BackgroundColor="#143699" FontAttributes="Bold" CornerRadius="20"/>
+
+            </StackLayout>
+            
+            
+            
+            
         </StackLayout>
+
+
+
+
     </ScrollView>
 </ContentPage>
