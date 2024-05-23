@@ -8,6 +8,7 @@ namespace MrMath
         public MainPage()
         {
             InitializeComponent();
+            AppShell.SetNavBarIsVisible(this, false);
         }
 
         private void profileIcon_Clicked(object sender, EventArgs e)

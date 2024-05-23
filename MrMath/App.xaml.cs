@@ -27,6 +27,9 @@ namespace MrMath
         public App()
         {
             InitializeComponent();
+
+            MainPage = new AppShell();
         }
+        
     }
 }
