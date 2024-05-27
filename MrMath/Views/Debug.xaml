@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MrMath.Views.Debug">
+             x:Class="MrMath.Views.Debug"
+             Title="Debug">
+
+
+
     <VerticalStackLayout>
-        <ListView x:Name="lst_contas"
-                      ItemSelected="lst_contas_ItemSelected">
+        <ListView x:Name="lst_contas" ItemSelected="lst_contas_ItemSelected" SeparatorColor="Blue">
             <ListView.Header>
-                <Grid ColumnDefinitions="3*, *, *, *">
+                <Grid ColumnDefinitions="*, *, *, *">
                     <Label Grid.Column="0" Text="Nome"/>
                     <Label Grid.Column="1" Text="Email"/>
                     <Label Grid.Column="2" Text="Senha"/>
                     <Label Grid.Column="3" Text="Data"/>
                 </Grid>
-             </ListView.Header>
+            </ListView.Header>
 
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -20,7 +23,7 @@
                         <ViewCell.ContextActions>
                             <MenuItem Text="Remover"/>
                         </ViewCell.ContextActions>
-                        <Grid ColumnDefinitions="3*, *, *, *">
+                        <Grid ColumnDefinitions="* , *, *, *">
                             <Label Grid.Row="0" Grid.Column="0" Text="{Binding Nome}"/>
                             <Label Grid.Row="0" Grid.Column="1" Text="{Binding Email}"/>
                             <Label Grid.Row="0" Grid.Column="2" Text="{Binding Senha}"/>
@@ -30,6 +33,5 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-
     </VerticalStackLayout>
 </ContentPage>

@@ -8,7 +8,16 @@ public partial class Debug : ContentPage
 	public Debug()
 	{
 		InitializeComponent();
-        lst_contas.ItemsSource = lista_contas;
+        AppShell.SetNavBarIsVisible(this, false);
+
+        List<string> contacts = new List<string>()
+        {
+            "John doe",
+            "Jane doe",
+            "Pedro Pinto"
+        };
+
+        lst_contas.ItemsSource = contacts;
 	}
 
     ObservableCollection<Registro> lista_contas = new ObservableCollection<Registro>();
