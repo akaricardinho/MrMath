@@ -88,6 +88,8 @@
                     </Frame>
                 </Grid>
             </StackLayout>
+
+            <Button x:Name="debugButton" Margin="0, 30, 0, 30" Text="Debug" Clicked="debugButton_Clicked" FontSize="Medium" FontAttributes="Bold" WidthRequest="125" HeightRequest="50" BackgroundColor="#1E38E6"/>
         </StackLayout>
 
 
