@@ -5,22 +5,17 @@ namespace MrMath.Views;
 
 public partial class Debug : ContentPage
 {
-	public Debug()
+
+    ObservableCollection<Registro> lista_contas = new ObservableCollection<Registro>();
+
+    public Debug()
 	{
 		InitializeComponent();
         AppShell.SetNavBarIsVisible(this, false);
 
-        List<string> contacts = new List<string>()
-        {
-            "John doe",
-            "Jane doe",
-            "Pedro Pinto"
-        };
-
-        lst_contas.ItemsSource = contacts;
+        lst_contas.ItemsSource = lista_contas;
 	}
 
-    ObservableCollection<Registro> lista_contas = new ObservableCollection<Registro>();
 
     protected async override void OnAppearing()
     {
@@ -35,9 +30,4 @@ public partial class Debug : ContentPage
 
     }
 
-
-    private void lst_contas_ItemSelected(object sender, SelectedItemChangedEventArgs e)
-    {
-
-    }
 }
