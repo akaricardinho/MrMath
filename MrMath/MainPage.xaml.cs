@@ -11,11 +11,6 @@ namespace MrMath
             //AppShell.SetNavBarIsVisible(this, false);
         }
 
-        private void profileIcon_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new Views.profilePage());
-        }
-
         private void debugButton_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new Views.Debug());

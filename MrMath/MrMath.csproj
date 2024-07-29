@@ -65,9 +65,19 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Remove="Views\connectedPage.xaml.cs" />
+	  <Compile Remove="Views\profilePage.xaml.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiImage Remove="Resources\Images\dotnet_bot.png" />
 	  <MauiImage Remove="Resources\Images\menu_burger.jpeg" />
 	  <MauiImage Remove="Resources\Images\user_icon.jpeg" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Remove="Views\connectedPage.xaml" />
+	  <MauiXaml Remove="Views\profilePage.xaml" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -89,13 +99,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Views\connectedPage.xaml">
+	  <MauiXaml Update="ProfilePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="SignIn.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Debug.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\profilePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\SignPage.xaml">

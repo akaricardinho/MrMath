@@ -10,13 +10,18 @@
     Title="MrMath">
 
     <ShellContent
-        Title="Página Inicial "
+        Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage"/>
 
     <ShellContent
-        Title="Página Inicial"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage"/>
+        Title="Perfil"
+        ContentTemplate="{DataTemplate local:ProfilePage}"
+        Route="profilePage"/>
+
+    <ShellContent
+        Title="Registrar"
+        ContentTemplate="{DataTemplate local:SignIn}"
+        Route="SignIn"/>
 
 </Shell>

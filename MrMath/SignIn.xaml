@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MrMath.SignIn"
+             Title="SignIn">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Cadastro" TextColor="#1E38E6" FontSize="32" HorizontalOptions="Center" FontAttributes="Bold"/>
+
+            <Label Text="Nome" Margin="30, 20, 0, -10" FontSize="20"/>
+            <Frame Margin="30, 30, 30, 0" HeightRequest="50" BackgroundColor="Transparent">
+                <Entry x:Name="entryNome" Placeholder="Ex.João Silva" PlaceholderColor="Gray" FontSize="17" HeightRequest="70"/>
+            </Frame>
+
+            <Label Text="Data Nascimento" Margin="30, 35, 0, -20" FontSize="20"/>
+            <Frame Margin="30, 30, 30, 0" HeightRequest="50" BackgroundColor="Transparent">
+                <Entry x:Name="entryData" Placeholder="Ex. 01/01/2001" FontSize="17" PlaceholderColor="Gray" HeightRequest="70"/>
+            </Frame>
+
+            <Label Text="Email" Margin="30, 35, 0, -20" FontSize="20"/>
+            <Frame Margin="30, 30, 30, 0" HeightRequest="50" BackgroundColor="Transparent">
+                <Entry x:Name="entryEmail" Placeholder="Ex. joaosilva@email.com" FontSize="17" PlaceholderColor="Gray" HeightRequest="70"/>
+            </Frame>
+
+            <Label Text="Senha" Margin="30, 35, 0, -20" FontSize="20"/>
+            <Frame Margin="30, 30, 30, 0" HeightRequest="50" BackgroundColor="Transparent">
+                <Entry x:Name="entrySenha" Placeholder="*****" FontSize="17" PlaceholderColor="Gray" HeightRequest="80"/>
+            </Frame>
+
+            <Label Text="Confirme sua senha" Margin="30, 35, 0, -20" FontSize="20"/>
+            <Frame Margin="30, 30, 30, 0" HeightRequest="50" BackgroundColor="Transparent">
+                <Entry x:Name="entrySenha2" Placeholder="*****" FontSize="17" PlaceholderColor="Gray" HeightRequest="80"/>
+            </Frame>
+
+            <Button x:Name="signButton" Clicked="signButton_Clicked" Margin="0, 30, 0, 0" Text="Cadastrar" FontSize="Large" FontAttributes="Bold" WidthRequest="250" HeightRequest="75" BackgroundColor="#1E38E6" CornerRadius="25"/>
+
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
