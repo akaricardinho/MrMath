@@ -65,6 +65,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Remove="Views\AulasMenu.xaml.cs" />
 	  <Compile Remove="Views\connectedPage.xaml.cs" />
 	  <Compile Remove="Views\profilePage.xaml.cs" />
 	</ItemGroup>
@@ -76,6 +77,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Remove="Views\AulasMenu.xaml" />
 	  <MauiXaml Remove="Views\connectedPage.xaml" />
 	  <MauiXaml Remove="Views\profilePage.xaml" />
 	</ItemGroup>
@@ -99,6 +101,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="AulasMenu.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="ProfilePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -106,9 +111,6 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Debug.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\SignPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

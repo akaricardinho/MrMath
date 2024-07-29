@@ -8,7 +8,6 @@ namespace MrMath
         public MainPage()
         {
             InitializeComponent();
-            //AppShell.SetNavBarIsVisible(this, false);
         }
 
         private void debugButton_Clicked(object sender, EventArgs e)

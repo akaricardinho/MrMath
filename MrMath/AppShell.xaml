@@ -17,7 +17,7 @@
     <ShellContent
         Title="Perfil"
         ContentTemplate="{DataTemplate local:ProfilePage}"
-        Route="profilePage"/>
+        Route="ProfilePage"/>
 
     <ShellContent
         Title="Registrar"
