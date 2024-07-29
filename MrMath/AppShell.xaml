@@ -9,6 +9,7 @@
     Shell.ForegroundColor="White"
     Title="MrMath">
 
+
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
@@ -23,5 +24,17 @@
         Title="Registrar"
         ContentTemplate="{DataTemplate local:SignIn}"
         Route="SignIn"/>
+
+    <ShellContent
+        Title="Aulas"
+        ContentTemplate="{DataTemplate local:AulasMenu}"
+        Route="AulasMenu"/>
+
+    <ShellContent
+        Title="Exercícios"
+        ContentTemplate="{DataTemplate local:ExercíciosMenu}"
+        Route="ExercíciosMenu"/>
+    
+        
 
 </Shell>
