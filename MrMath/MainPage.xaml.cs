@@ -1,5 +1,4 @@
-﻿using MrMath.Views;
-
+﻿
 namespace MrMath
 {
     public partial class MainPage : ContentPage

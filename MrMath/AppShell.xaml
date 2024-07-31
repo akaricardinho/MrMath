@@ -30,11 +30,6 @@
         ContentTemplate="{DataTemplate local:AulasMenu}"
         Route="AulasMenu"/>
 
-    <ShellContent
-        Title="Exercícios"
-        ContentTemplate="{DataTemplate local:ExercíciosMenu}"
-        Route="ExercíciosMenu"/>
-    
-        
+
 
 </Shell>
