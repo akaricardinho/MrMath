@@ -6,9 +6,9 @@
     xmlns:local="clr-namespace:MrMath"
     Shell.FlyoutBehavior="Flyout"
     BackgroundColor="#143699"
+    FlyoutBackgroundColor="#143699"
     Shell.ForegroundColor="White"
     Title="MrMath">
-
 
     <ShellContent
         Title="Home"
@@ -29,6 +29,29 @@
         Title="Aulas"
         ContentTemplate="{DataTemplate local:AulasMenu}"
         Route="AulasMenu"/>
+
+    <ShellContent
+        Title="Exercícios"
+        ContentTemplate="{DataTemplate local:MenuExercicios}"
+        Route="MenuExercicios"/>
+    
+    <Shell.ItemTemplate>
+        <DataTemplate>
+            <Grid ColumnDefinitions="60,Auto">
+                <Image Source="{Binding FlyoutIcon}"
+                       Margin="5"
+                       HeightRequest="55" />
+                <Label Grid.Column="1"
+                       Text="{Binding Title}"
+                       VerticalTextAlignment="Center"
+                       FontSize="Title"
+                       TextColor="White"
+                       FontAttributes="Bold"/>
+            </Grid>
+        </DataTemplate>
+    </Shell.ItemTemplate>
+    
+
 
 
 

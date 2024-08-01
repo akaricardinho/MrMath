@@ -1,4 +1,6 @@
 ﻿
+using CommunityToolkit.Maui.Core.Platform;
+
 namespace MrMath
 {
     public partial class MainPage : ContentPage
