@@ -2,7 +2,9 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:mct="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"  
-             x:Class="MrMath.MainPage">
+             x:Class="MrMath.MainPage"
+             Shell.FlyoutBehavior="Flyout"
+             BackgroundColor="#143699">
 
     <Page.Behaviors>
         <mct:StatusBarBehavior StatusBarColor="#143699"/>
@@ -10,74 +12,9 @@
         
     <ScrollView>
         <StackLayout>
+            <Label FontSize="32" FontAttributes="Bold" TextColor="White" Margin="0, 30, 10, 0" HorizontalOptions="Center" Text="Faça Login no Mr.Math"/>
+            <Image Source="logo.jpeg" HeightRequest="200"/>
 
-            <Label 
-        HorizontalOptions="Center"
-        TextColor="Black"
-        FontSize="Medium"
-        FontAttributes="Bold"
-        Margin="50"
-        Text="BEM VINDO AO MR MATH!"/>
-
-            <Frame
-    BackgroundColor="#0B1550"
-    Margin="0"
-    WidthRequest="350"
-    HeightRequest="200"
-    VerticalOptions="Start">
-
-
-                <Label Text="BANNER" FontSize="Large" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-            </Frame>
-
-
-
-            <!--Loading Bars-->
-            <StackLayout>
-                <Grid RowDefinitions="*, *, *, *, *, *">
-                    <!--Loading Bar Aulas-->
-                    <Label Text="Aulas" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Start" Margin="30" Grid.Row="0"/>
-                    <Frame
-            BackgroundColor="#A4AEF4"
-            WidthRequest="350"
-            HeightRequest="60"
-            VerticalOptions="Start"
-            CornerRadius="50"
-                Grid.Row="1">
-                    </Frame>
-
-                    <Frame
-            BackgroundColor="#1E38E6"
-            WidthRequest="100"
-            HeightRequest="60"
-            VerticalOptions="Start"
-            CornerRadius="50"
-                Grid.Row="1">
-                        <Label Text="100%" FontSize="17" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-                    </Frame>
-                    <!--Loading Bar Aulas-->
-                    <Label Text="Questões" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="3" HorizontalOptions="Start" Margin="30"/>
-
-                    <Frame
-                BackgroundColor="#A4AEF4"
-                WidthRequest="350"
-                HeightRequest="60"
-                VerticalOptions="Start"
-                CornerRadius="50"
-                    Grid.Row="4">
-                    </Frame>
-
-                    <Frame
-                BackgroundColor="#1E38E6"
-                WidthRequest="100"
-                HeightRequest="60"
-                VerticalOptions="Start"
-                CornerRadius="50"
-                    Grid.Row="4">
-                        <Label Text="100%" FontSize="17" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-                    </Frame>
-                </Grid>
-            </StackLayout>
 
             <Button x:Name="debugButton" Margin="0, 30, 0, 30" Text="Debug" Clicked="debugButton_Clicked" FontSize="Medium" FontAttributes="Bold" WidthRequest="125" HeightRequest="50" BackgroundColor="#1E38E6"/>
         </StackLayout>

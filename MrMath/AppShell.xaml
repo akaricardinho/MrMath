@@ -11,7 +11,7 @@
     Title="MrMath">
 
     <ShellContent
-        Title="Home"
+        Title=""
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage"/>
 
@@ -34,7 +34,7 @@
         Title="Exercícios"
         ContentTemplate="{DataTemplate local:MenuExercicios}"
         Route="MenuExercicios"/>
-    
+
     <Shell.ItemTemplate>
         <DataTemplate>
             <Grid ColumnDefinitions="60,Auto">
